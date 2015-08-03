@@ -15,6 +15,8 @@
 		E5EAAA3D1B6B9B05001130D9 /* DailyGoodsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EAAA3C1B6B9B05001130D9 /* DailyGoodsManagerTests.swift */; };
 		E5EAAA4B1B6BA55B001130D9 /* GoodsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EAAA4A1B6BA55B001130D9 /* GoodsListTableViewController.swift */; };
 		E5EAAA4D1B6BAD0F001130D9 /* AddGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EAAA4C1B6BAD0F001130D9 /* AddGoodsViewController.swift */; };
+		E5EAAA4F1B6BAFEB001130D9 /* GoodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EAAA4E1B6BAFEB001130D9 /* GoodsModel.swift */; };
+		E5ED60561B6CFA2400136246 /* GoodsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED60551B6CFA2400136246 /* GoodsListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		E5EAAA3C1B6B9B05001130D9 /* DailyGoodsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoodsManagerTests.swift; sourceTree = "<group>"; };
 		E5EAAA4A1B6BA55B001130D9 /* GoodsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsListTableViewController.swift; sourceTree = "<group>"; };
 		E5EAAA4C1B6BAD0F001130D9 /* AddGoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGoodsViewController.swift; sourceTree = "<group>"; };
+		E5EAAA4E1B6BAFEB001130D9 /* GoodsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsModel.swift; sourceTree = "<group>"; };
+		E5ED60551B6CFA2400136246 /* GoodsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsListTableViewCell.swift; sourceTree = "<group>"; };
 		F9FB3D0F783E938207B5F596 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,7 +109,9 @@
 			children = (
 				E5EAAA261B6B9B05001130D9 /* AppDelegate.swift */,
 				E5EAAA4A1B6BA55B001130D9 /* GoodsListTableViewController.swift */,
+				E5ED60551B6CFA2400136246 /* GoodsListTableViewCell.swift */,
 				E5EAAA4C1B6BAD0F001130D9 /* AddGoodsViewController.swift */,
+				E5EAAA4E1B6BAFEB001130D9 /* GoodsModel.swift */,
 				E5EAAA2A1B6B9B05001130D9 /* Main.storyboard */,
 				E5EAAA2D1B6B9B05001130D9 /* Images.xcassets */,
 				E5EAAA2F1B6B9B05001130D9 /* LaunchScreen.xib */,
@@ -290,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EAAA4F1B6BAFEB001130D9 /* GoodsModel.swift in Sources */,
 				E5EAAA4B1B6BA55B001130D9 /* GoodsListTableViewController.swift in Sources */,
+				E5ED60561B6CFA2400136246 /* GoodsListTableViewCell.swift in Sources */,
 				E5EAAA271B6B9B05001130D9 /* AppDelegate.swift in Sources */,
 				E5EAAA4D1B6BAD0F001130D9 /* AddGoodsViewController.swift in Sources */,
 			);
