@@ -1,24 +1,23 @@
 //
-//  AddGoodsViewController.swift
+//  GoodsDetailsViewController.swift
 //  DailyGoodsManager
 //
-//  Created by Ryo Morimoto on 2015/07/31.
+//  Created by Ryo Morimoto on 2015/10/14.
 //  Copyright (c) 2015年 Ryo Morimoto. All rights reserved.
 //
 
 import UIKit
-import RealmSwift
 
-class AddGoodsViewController: UIViewController {
-
+class GoodsDetailsViewController: UIViewController {
+    
+    
     @IBOutlet weak var nameTextField: UITextField!
+    
     @IBOutlet weak var lastAddDateTextField: UITextField!
+        let dateFormatter = NSDateFormatter()
+    
     @IBOutlet weak var nextNoticeDateTextField: UITextField!
-    let dateFormatter = NSDateFormatter()
-    
-    
-    
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         let addDatePicker = UIDatePicker()
         let noticeDatePicker = UIDatePicker()
@@ -32,13 +31,8 @@ class AddGoodsViewController: UIViewController {
         noticeDatePicker.datePickerMode = .Date
         noticeDatePicker.addTarget(self, action: Selector("updateNextNoticeDateTextField:"),  forControlEvents: .ValueChanged)
         nextNoticeDateTextField.inputView = noticeDatePicker
-}
-    func updateLastAddDateTextField(sender: UIDatePicker){
-        lastAddDateTextField.text = dateFormatter.stringFromDate(sender.date)
-    }
-    
-    func updateNextNoticeDateTextField(sender: UIDatePicker){
-        nextNoticeDateTextField.text = dateFormatter.stringFromDate(sender.date)
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,23 +40,9 @@ class AddGoodsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func addButtonTouchUpInside(sender: AnyObject) {
-        let goods = GoodsModel()
-        goods.name = nameTextField.text ?? ""
-        goods.lastAddDate = dateFormatter.dateFromString(lastAddDateTextField.text) ?? NSDate()
-        goods.nextNoticeDate = dateFormatter.dateFromString(nextNoticeDateTextField.text) ?? NSDate()
-        let realm = Realm()
-        realm.write {
-            realm.add(goods, update: false)
-            }
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
     @IBAction func tapScreen(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
-    
-    
 
     /*
     // MARK: - Navigation

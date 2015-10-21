@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D24F9B47983D7BCFAFC9235 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FB3D0F783E938207B5F596 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E5C00DA61BCE2D6E001656B3 /* GoodsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C00DA51BCE2D6E001656B3 /* GoodsDetailsViewController.swift */; };
 		E5EAAA271B6B9B05001130D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EAAA261B6B9B05001130D9 /* AppDelegate.swift */; };
 		E5EAAA2C1B6B9B05001130D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EAAA2A1B6B9B05001130D9 /* Main.storyboard */; };
 		E5EAAA2E1B6B9B05001130D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EAAA2D1B6B9B05001130D9 /* Images.xcassets */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		40D32CDA0F635C19DA069553 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C11814CCD26C789AE4EAD6FC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E5C00DA51BCE2D6E001656B3 /* GoodsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailsViewController.swift; sourceTree = "<group>"; };
 		E5EAAA211B6B9B05001130D9 /* DailyGoodsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyGoodsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EAAA251B6B9B05001130D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EAAA261B6B9B05001130D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				E5ED60551B6CFA2400136246 /* GoodsListTableViewCell.swift */,
 				E5EAAA4C1B6BAD0F001130D9 /* AddGoodsViewController.swift */,
 				E5EAAA4E1B6BAFEB001130D9 /* GoodsModel.swift */,
+				E5C00DA51BCE2D6E001656B3 /* GoodsDetailsViewController.swift */,
 				E5EAAA2A1B6B9B05001130D9 /* Main.storyboard */,
 				E5EAAA2D1B6B9B05001130D9 /* Images.xcassets */,
 				E5EAAA2F1B6B9B05001130D9 /* LaunchScreen.xib */,
@@ -192,6 +195,7 @@
 		E5EAAA191B6B9B05001130D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Ryo Morimoto";
 				TargetAttributes = {
@@ -300,6 +304,7 @@
 				E5EAAA4B1B6BA55B001130D9 /* GoodsListTableViewController.swift in Sources */,
 				E5ED60561B6CFA2400136246 /* GoodsListTableViewCell.swift in Sources */,
 				E5EAAA271B6B9B05001130D9 /* AppDelegate.swift in Sources */,
+				E5C00DA61BCE2D6E001656B3 /* GoodsDetailsViewController.swift in Sources */,
 				E5EAAA4D1B6BAD0F001130D9 /* AddGoodsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

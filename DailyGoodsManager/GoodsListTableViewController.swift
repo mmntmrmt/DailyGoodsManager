@@ -20,10 +20,8 @@ class GoodsListTableViewController: UITableViewController, UITableViewDataSource
         super.viewDidLoad()
         
         dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP")
-        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+        dateFormatter.dateFormat = "yyyy/MM/dd"
         
-//        goodsListTableView.delegate = self
-//        goodsListTableView.dataSource = self
         
     }
 
@@ -46,15 +44,19 @@ class GoodsListTableViewController: UITableViewController, UITableViewDataSource
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("GoodsListCell", forIndexPath: indexPath) as? GoodsListTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? GoodsListTableViewCell
         cell?.goodsNameLabel.text = (goodsList[indexPath.row] as GoodsModel).name
         cell?.lastAddDateLabel.text = dateFormatter.stringFromDate((goodsList[indexPath.row] as GoodsModel).lastAddDate)
         cell?.nextNoticeDateLabel.text = dateFormatter.stringFromDate((goodsList[indexPath.row] as GoodsModel).nextNoticeDate)
         
         
-        return cell ?? UITableViewCell()
+        return cell ?? GoodsListTableViewCell()
     }
 
+    @IBAction func swipeCell(sender: UISwipeGestureRecognizer) {
+    }
+    
+    
         
 
 }

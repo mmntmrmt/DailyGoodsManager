@@ -11,6 +11,7 @@ import RealmSwift
 class GoodsModel: Object {
     
     dynamic var name = ""
+    
     dynamic var lastAddDate = NSDate()
     dynamic var nextNoticeDate = NSDate()
     
