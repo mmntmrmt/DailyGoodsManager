@@ -11,8 +11,9 @@ import UIKit
 class GoodsListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var goodsNameLabel: UILabel!
-    @IBOutlet weak var lastAddDateLabel: UILabel!
-    @IBOutlet weak var nextNoticeDateLabel: UILabel!
+    
+    @IBOutlet weak var goodsQuantityLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

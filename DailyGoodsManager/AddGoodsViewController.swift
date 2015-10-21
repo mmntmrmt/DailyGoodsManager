@@ -49,6 +49,7 @@ class AddGoodsViewController: UIViewController {
     @IBAction func addButtonTouchUpInside(sender: AnyObject) {
         let goods = GoodsModel()
         goods.name = nameTextField.text ?? ""
+        goods.quantity = 1 
         goods.lastAddDate = dateFormatter.dateFromString(lastAddDateTextField.text) ?? NSDate()
         goods.nextNoticeDate = dateFormatter.dateFromString(nextNoticeDateTextField.text) ?? NSDate()
         let realm = Realm()

@@ -14,6 +14,7 @@ class GoodsModel: Object {
     
     dynamic var lastAddDate = NSDate()
     dynamic var nextNoticeDate = NSDate()
+    dynamic var quantity = 0
     
 // Specify properties to ignore (Realm won't persist these)
     

@@ -1,0 +1,36 @@
+
+/* Class = "UIButton"; normalTitle = "決定"; ObjectID = "0IR-da-zeU"; */
+"0IR-da-zeU.normalTitle" = "決定";
+
+/* Class = "UILabel"; text = "品名"; ObjectID = "6PL-qc-hsb"; */
+"6PL-qc-hsb.text" = "品名";
+
+/* Class = "UILabel"; text = "次回通知する日"; ObjectID = "9gU-0Z-Q17"; */
+"9gU-0Z-Q17.text" = "次回通知する日";
+
+/* Class = "UILabel"; text = "残り"; ObjectID = "BrF-WM-rYS"; */
+"BrF-WM-rYS.text" = "残り";
+
+/* Class = "UIButton"; normalTitle = "追加する"; ObjectID = "O3X-eq-s6V"; */
+"O3X-eq-s6V.normalTitle" = "追加する";
+
+/* Class = "UILabel"; text = "次回通知日"; ObjectID = "Q8b-tH-uvJ"; */
+"Q8b-tH-uvJ.text" = "次回通知日";
+
+/* Class = "UILabel"; text = "品名"; ObjectID = "Vkr-fc-x6q"; */
+"Vkr-fc-x6q.text" = "品名";
+
+/* Class = "UILabel"; text = "個"; ObjectID = "XC5-UI-nlj"; */
+"XC5-UI-nlj.text" = "個";
+
+/* Class = "UILabel"; text = "品名"; ObjectID = "cW7-Ne-gT5"; */
+"cW7-Ne-gT5.text" = "品名";
+
+/* Class = "UILabel"; text = "補充した日"; ObjectID = "rqM-uZ-04s"; */
+"rqM-uZ-04s.text" = "補充した日";
+
+/* Class = "UIBarButtonItem"; title = "追加"; ObjectID = "sn5-if-O55"; */
+"sn5-if-O55.title" = "追加";
+
+/* Class = "UILabel"; text = "前回補充日"; ObjectID = "ykE-mC-nAN"; */
+"ykE-mC-nAN.text" = "前回補充日";

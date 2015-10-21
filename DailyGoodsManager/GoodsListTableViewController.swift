@@ -12,6 +12,8 @@ import RealmSwift
 class GoodsListTableViewController: UITableViewController, UITableViewDataSource,UITableViewDelegate {
 
     
+        
+    
     @IBOutlet var goodsListTableView: UITableView!
     var goodsList = Realm().objects(GoodsModel)
     let dateFormatter = NSDateFormatter()
@@ -46,8 +48,7 @@ class GoodsListTableViewController: UITableViewController, UITableViewDataSource
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? GoodsListTableViewCell
         cell?.goodsNameLabel.text = (goodsList[indexPath.row] as GoodsModel).name
-        cell?.lastAddDateLabel.text = dateFormatter.stringFromDate((goodsList[indexPath.row] as GoodsModel).lastAddDate)
-        cell?.nextNoticeDateLabel.text = dateFormatter.stringFromDate((goodsList[indexPath.row] as GoodsModel).nextNoticeDate)
+        cell?.goodsQuantityLabel.text = String((goodsList[indexPath.row] as GoodsModel).quantity)
         
         
         return cell ?? GoodsListTableViewCell()
